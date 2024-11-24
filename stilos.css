@@ -9,20 +9,43 @@ body {
 
 /* Header */
 header {
-    background: #4CAF50;
+    background: #4CAF50; 
     color: white;
     padding: 2rem 0;
     text-align: center;
+    position: relative;
 }
 
-header h1 {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.header-text {
+    flex: 1; /* Texto ocupa espacio dinámico */
+}
+
+.header-text h1 {
     margin: 0;
     font-size: 2.5rem;
 }
 
-header p {
+.header-text p {
     font-size: 1.2rem;
 }
+
+.header-image {
+    width: 80px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+
 
 /* Section Styles */
 .container {
@@ -53,6 +76,158 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
+
+
+/* Sección de aptitudes */
+.aptitudes {
+    display: flex;                
+    align-items: flex-start;      
+    gap: 2rem;                    
+    padding: 2rem;                
+    background: #f9f9f9;          
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aptitudes .foto {
+    width: 150px;                 
+    height: auto;                 
+    border-radius: 50%;          
+    object-fit: cover;            
+}
+
+.aptitudes .contenido {
+    flex: 1;                      
+}
+
+.aptitudes h2 {
+    margin-bottom: 1rem;
+    color: #4CAF50;
+    font-size: 1.8rem;
+}
+
+.aptitudes ul {
+    list-style: none;             
+    padding: 0;
+    margin: 0;
+}
+
+.aptitudes ul li {
+    display: flex;              
+    align-items: center;          
+    margin-bottom: 1rem;          
+    font-size: 1.2rem;
+}
+
+.aptitudes ul li .icono {
+    font-size: 1.5rem;            
+    margin-right: 0.8rem;         
+    color: #4CAF50;              
+}
+
+/* Sección de experiencia */
+.experiencia {
+    padding: 3rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.experiencia h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 2rem;
+}
+
+.experiencia-item {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-experiencia {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.descripcion {
+    max-width: 600px;
+    text-align: left;
+}
+
+.descripcion h3 {
+    color: #333;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.descripcion p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Sección de proyectos */
+.proyectos {
+    padding: 3rem 0;
+    text-align: center;
+    background: #e8f5e9; 
+}
+
+.proyectos h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.proyecto-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    background: #fff; 
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.imagen-proyecto {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion-proyecto {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333; 
+}
+
+.descripcion-proyecto h3 {
+    font-size: 1.8rem;
+    color: #4CAF50; 
+    margin-bottom: 1rem;
+}
+
+.descripcion-proyecto p {
+    line-height: 1.8;
+    color: #555; 
+}
 /* Footer */
 footer {
     text-align: center;
@@ -66,7 +241,7 @@ footer p {
 }
 .foto {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center;    /* Centra verticalmente */
-    height: 100%;           /* Asegúrate de que el contenedor tenga altura */
+    justify-content: center; 
+    align-items: center;    
+    height: 100%;           
 }
