@@ -245,3 +245,39 @@ footer p {
     align-items: center;    
     height: 100%;           
 }
+/* Sección de redes sociales */
+.social-media {
+    text-align: center;
+    padding: 3rem 0;
+    background: #f4f4f4; /* Fondo claro */
+    color: #333;
+}
+
+.social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4CAF50; /* Verde del header */
+}
+
+.social-media p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555; /* Gris suave */
+}
+
+.btn-facebook {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #1877f2; /* Azul de Facebook */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-facebook:hover {
+    background-color: #145dbf; /* Azul más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de zoom ligero */
+}
