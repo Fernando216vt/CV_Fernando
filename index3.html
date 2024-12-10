@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo </title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <h1>Semáforo</h1>
+    <div class="semaforo">
+        <div id="rojo" class="luz"></div>
+        <div id="amarillo" class="luz"></div>
+        <div id="verde" class="luz"></div>
+    </div>
+    <div class="botones">
+        <button class="rojos" onclick="cambiarColor('rojo', 'red', ['amarillo', 'verde'])">Encender Rojo</button>
+        <button  class="amarillos" onclick="cambiarColor('amarillo', 'yellow', ['rojo', 'verde'])">Encender Amarillo</button>
+        <button class="verdes" onclick="cambiarColor('verde', 'green', ['rojo', 'amarillo'])">Encender Verde</button>
+    </div>
+
+    <script>
+        function cambiarColor(idEncender, color, idsApagar) {
+    
+            const luzEncender = document.getElementById(idEncender);
+            luzEncender.style.backgroundColor = color;
+
+            idsApagar.forEach(id => {
+                const luzApagar = document.getElementById(id);
+                luzApagar.style.backgroundColor = 'gray';
+            });
+        }
+    </script>
+</body>
+</html>
+
