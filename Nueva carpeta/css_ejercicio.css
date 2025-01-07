@@ -1,0 +1,166 @@
+#titulo {
+    color: tomato;
+    
+}
+#titulo:hover {
+    color: #f00;
+}
+p.texto { 
+    color:slateblue;
+    
+}
+p.especial{
+    color: red;
+}
+div p {
+    color: black;
+    
+}
+div h2, div h3 {
+    color: blueviolet;
+}
+
+
+body {
+    text-align: center;
+    margin-top: 50px;
+}
+/* * {
+    font-size: 24px;
+
+} */
+
+/*cometarios 
+.color {
+    color:rgb();
+}:)*/
+.color {
+    /*
+    border:5px black double;
+    
+    outset hidden
+    groove
+    */
+    border-style: double;
+    border-color: teal;
+    border-radius: 50px;
+    border-width: 1rem;
+
+}
+#fondo {
+    background-color: red;
+    opacity: 0.3;
+    background-image: url("astro.jpg");
+    background-size: 100px 100px;
+    height: 200px;
+    background-repeat: repeat-x;
+    background-position: left center;
+    background: #f00 url("astro.jpg") repeat-y/100px 100px;
+}
+.margen{
+    background-color: chocolate;
+    margin: 15px; /*espacios dentro del elemento  */
+    padding: 30px 15px; /*espacios fuera */
+    border:solid 5px black;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+    outline: 2px solid red;
+
+}
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px  ;
+}
+a:link {
+    color:blueviolet;
+    font-size: 30px;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: yellow;
+    border-radius: 50px;
+    margin: 30px;
+    padding: 15px;
+    border: solid ;
+
+}
+ul {
+    background-color: aqua;
+    list-style-type: circle;
+
+}
+table {
+    width: 100%;
+    border: solid;
+    border-collapse: collapse;
+    
+}
+th, td {
+    border: solid black;
+}
+th {
+    background-color: tomato;
+    color:white;
+    text-align: center;
+}
+tr:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+tr:nth-child(even) {
+    background-color: wheat;
+
+} 
+body.div {
+    background-color: #f00;
+}
+span {
+    /*display: block;*/
+    max-width: 300px;
+    background-color: #f00;
+
+}
+.inline {
+    display: inline;
+}
+#position {
+    position: sticky;
+    left: 20px;
+    
+}
+.left {
+    float: left;
+    width: 00px;
+    height: 200px;
+}
+.container {
+    height: 200px;
+}
+.right {
+    float: lef;
+}
+.column {
+   
+    margin: 0px;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+    
+}
+/*centrar el contenido */
+.center {
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+    padding: 50px 0px;
+}
